@@ -1,0 +1,153 @@
+Script started on Thu 17 Sep 2015 12:25:34 AM EDT
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2sharique@sharique-HP:~/Documents/CNS/hussain-assign2$ cd[K[Kls
+[0m[01;34mDecryptor[0m  gatordec.c   gatorenc.c   makefile   myfile.txt  README.txt~
+[01;34mEncryptor[0m  gatordec.c~  gatorenc.c~  makefile~  ReadMe.pdf
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2sharique@sharique-HP:~/Documents/CNS/hussain-assign2$ make clean
+rm -rf Decryptor Encryptor
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2sharique@sharique-HP:~/Documents/CNS/hussain-assign2$ make
+mkdir Decryptor Encryptor
+gcc -o Encryptor/gatorenc gatorenc.c -lgcrypt
+gatorenc.c: In function ‘main’:
+gatorenc.c:249:4: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘__off_t’ [-Wformat=]
+    sprintf(file_size, "%d", file_stat.st_size);
+    ^
+gatorenc.c:273:4: warning: passing argument 3 of ‘sendfile’ from incompatible pointer type [enabled by default]
+    while (((sent_bytes = sendfile(client_socket, fd, &offset, BUFSIZ))
+    ^
+In file included from gatorenc.c:25:0:
+/usr/include/x86_64-linux-gnu/sys/sendfile.h:33:16: note: expected ‘off_t *’ but argument is of type ‘int *’
+ extern ssize_t sendfile (int __out_fd, int __in_fd, off_t *__offset,
+                ^
+gcc -o Decryptor/gatordec gatordec.c -lgcrypt
+gatordec.c: In function ‘main’:
+gatordec.c:258:4: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long long int’ [-Wformat=]
+    fprintf(stdout, "\nFile size : %d\n", file_size);
+    ^
+gatordec.c:280:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long long int’ [-Wformat=]
+       len, remain_data);
+       ^
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2sharique@sharique-HP:~/Documents/CNS/hussain-assign2$ ls
+[0m[01;34mDecryptor[0m  gatordec.c   gatorenc.c   makefile   myfile.txt  README.txt~
+[01;34mEncryptor[0m  gatordec.c~  gatorenc.c~  makefile~  ReadMe.pdf
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2sharique@sharique-HP:~/Documents/CNS/hussain-assign2$ lsmake[2Pls[Kcd Encryptor/
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ ls
+[0m[01;35mFriends.mkv[0m  [01;32mgatorenc[0m
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ ./gatorenc Friendds.mkv [K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K -l Friiends.mkv 
+Please enter password between 8-20 chars :ny  mynameiskhaan  n
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ ls
+[0m[01;35mFriends.mkv[0m  Friends.mkv.uf  [01;32mgatorenc[0m
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.u f 
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./gatorenc -l Friiends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ t./gatorenc -l Fr[1@i[A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ [Ci./gatorenc -l F[1@r[A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ [C[Cm./gatorenc -l [1@F[A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ [C[C[Ce./gatorenc -l[1@ [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ [C[C[C[C ./gatorenc -[1@l[A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ [C[C[C[C[C
+
+Please enter password between 8-20 chars :mynameiskhan
+
+real	0m12.609s
+user	0m4.363s
+sys	0m0.420s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K[A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp Friends.mkvtime ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :mynameiskhan
+
+real	0m12.464s
+user	0m4.418s
+sys	0m0.451s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :mynameiskhan
+
+real	0m10.487s
+user	0m4.375s
+sys	0m0.388s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K[A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :mynameiskhan
+
+real	0m8.835s
+user	0m4.405s
+sys	0m0.367s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :efkdsjfdkf
+
+real	0m7.042s
+user	0m4.406s
+sys	0m0.409s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :ksdjfkdjfkf
+
+real	0m6.856s
+user	0m4.329s
+sys	0m0.432s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :sdfdfdfffgf
+
+real	0m7.218s
+user	0m4.310s
+sys	0m0.442s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :sdsfkjfhkjsdfhdsf
+
+real	0m7.192s
+user	0m4.381s
+sys	0m0.368s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :sdlkdsjkfhsd
+
+real	0m6.936s
+user	0m4.353s
+sys	0m0.397s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :dkjsdkjfhd
+
+real	0m6.067s
+user	0m4.299s
+sys	0m0.463s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :dsklkjksjdfk
+
+real	0m6.135s
+user	0m4.380s
+sys	0m0.404s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :ldlkjdskljfs
+
+real	0m5.996s
+user	0m4.305s
+sys	0m0.439s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :ds;lkjfdskjfkh
+
+real	0m6.429s
+user	0m4.377s
+sys	0m0.428s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc --l Friends.mkv [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uf [K
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ rm Friends.mkv.uff [A]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ time ./gatorenc -l Friends.mkv 
+Please enter password between 8-20 chars :dkjdsfkhdsk
+
+real	0m6.189s
+user	0m4.390s
+sys	0m0.436s
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ ls
+[0m[01;35mFriends.mkv[0m  Friends.mkv.uf  [01;32mgatorenc[0m
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ cp ..[K[KFriends.mkv.uff ../Decryptor/.
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Encryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Encryptor$ cd ../Decryptor/ [A
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Decryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Decryptor$ ls
+Friends.mkv.uf  [0m[01;32mgatordec[0m
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Decryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Decryptor$ ./gatordec -l Friiends.mkv.uf 
+output file name : Friends.mkv
+Please enter password between 8-20 chars :dkjdsfkhdsk
+HMAC successfully matched
+]0;sharique@sharique-HP: ~/Documents/CNS/hussain-assign2/Decryptorsharique@sharique-HP:~/Documents/CNS/hussain-assign2/Decryptor$ exit
+
+Script done on Thu 17 Sep 2015 12:34:11 AM EDT
